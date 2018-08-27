@@ -4,34 +4,18 @@ You can use the [editor on GitHub](https://github.com/don1343/don1343.github.io/
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+奉日月以为盟，昭天地以为鉴。
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+啸山河以为证，敬鬼神以为凭。
 
-```markdown
-Syntax highlighted code block
+从此山高不阻其志，涧深不断其行。
 
-# Header 1
-## Header 2
-### Header 3
+流年不毁其意，风霜不掩其情。
 
-- Bulleted
-- List
+纵然前路荆棘遍野，
 
-1. Numbered
-2. List
+亦将坦然无惧仗剑随行。
 
-**Bold** and _Italic_ and `Code` text
+今生今世，不离不弃。
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/don1343/don1343.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+永生永世，相许相从。
