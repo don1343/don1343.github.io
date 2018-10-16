@@ -4,10 +4,6 @@
 
 [WebAPI第二天笔记](https://github.com/don1343/don1343.github.io/blob/master/WebAPI002.md)
 
-You can use the [editor on GitHub](https://github.com/don1343/don1343.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
 奉日月以为盟，昭天地以为鉴。
 
 啸山河以为证，敬鬼神以为凭。
