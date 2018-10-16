@@ -1,6 +1,6 @@
 ### 表单元素的属性
 
-- `value`用于大部分表单元素内容的回去(option除外)
+- `value`用于大部分表单元素内容的获取(option除外)
 - `type`可以获取 input 标签的类型
 - `disabled`禁用属性
 - `checked`复选框选中属性
