@@ -559,7 +559,7 @@
 
 ### addEventListener 事件监听
 
-`EventTarget.addEventListener()`方法将指定的监听器注册到事件源上，当该对象触发指定的时间时，指定的回调函数就会被执行。 [点击查看文档](https://developer.mozilla.org/zh-CN/docs/Web/API/EventTarget/addEventListener)
+`EventTarget.addEventListener()`方法将指定的监听器注册到事件源上，当该对象触发指定的事件时，指定的回调函数就会被执行。 [点击查看文档](https://developer.mozilla.org/zh-CN/docs/Web/API/EventTarget/addEventListener)
 
 ```html
 <input type="button" id="btn" value="click">
@@ -570,40 +570,4 @@
     })
 </script>
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
