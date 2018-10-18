@@ -420,5 +420,5 @@
 </script>
 ```
 
-精选文章[JS 中的事件绑定、事件监听、事件委托是什么](https://juejin.im/entry/57ea329e67f3560057ad41a6)
+精选文章[JS 中的事件绑定、事件监听、事件委托是什么](https://juejin.im/post/5a94bbea5188257a6049bcc5)
 
