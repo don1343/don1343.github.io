@@ -1,3 +1,5 @@
+[TOC]
+
 ### 父子节点
 
 - `Node.parentNode`返回指定的节点在 DOM 树中的父节点 [点击查看文档](https://developer.mozilla.org/zh-CN/docs/Web/API/Node/parentNode)
