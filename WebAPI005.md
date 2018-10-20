@@ -84,7 +84,7 @@ URL 的组成 `scheme:// host:port/path?query#fragment`
     console.log(box.offsetHeight);
     
     var son = document.getElementById('son');
-    // 获取当前距离当前元素最近的定位父元素，如果没有定位父元素，获取距离 body 的偏移
+    // 获取距离当前元素最近的已定位父元素的距离，如果没有定位父元素，获取距离 body 的偏移
     // 如果有定位的父级盒子，那么获取的就是距离已定位的父级盒子的偏移
     console.log(son.offsetLeft);
     console.log(son.offsetTop);
