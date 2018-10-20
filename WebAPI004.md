@@ -519,7 +519,7 @@ console.dir(window);  // 打印出所有的 window 对象属性
 
 ### setTimeout() 
 
-setTimeout() 定时器，在指定的好秒速到达之后执行指定的函数，只执行一次 [点击查看文档](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/setTimeout)
+setTimeout() 定时器，在指定的毫秒数到达之后执行指定的函数，只执行一次 [点击查看文档](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/setTimeout)
 
 ```html
 <input type="button" id="btn1" value="开启定时器">
