@@ -374,7 +374,7 @@
 </script>
 ```
 
-### 取消默认行为的执行 和 取消冒泡
+### 取消默认行为 和 阻止冒泡
 
 ```html
 <a href="http://baidu.com" id="link">百度</a>
@@ -441,4 +441,268 @@
 ```
 
 精选文章[JS 中的事件绑定、事件监听、事件委托是什么](https://juejin.im/post/5a94bbea5188257a6049bcc5)
+
+### BOM 
+
+BOM（Browser Object Model） 是指浏览器对象模型，浏览器对象模型提供了独立于内容的、可以与浏览器窗口进行互动的对象结构。BOM 由多个对象组成，其中代表浏览器窗口的 window 对象是 BOM 的顶层对象，其他对象都是该对象的子对象。
+
+```javascript
+// window 是浏览器的顶级对象，当我们使用 window 的成员时，window 可以省略不写
+// window.alert(); ========> alert();
+// window.document.write();  ========>  document.write();
+var age = 18;  // 定义的全局变量都是 window 对象的属性
+console.log(window.age);  // 18
+console.dir(window);  // 打印出所有的 window 对象属性
+// window 的默认属性只能获取，不能赋值,尽量不要起这样的变量名，例如 name、top 等
+```
+
+### 对话框
+
+了解即可，兼容性不好，且长的丑，一般不用
+
+```html
+<input type="button" id="btn1" value="alert">
+<input type="button" id="btn2" value="prompt">
+<input type="button" id="btn3" value="confirm">
+<script>
+	var btn1 = document.getElementById('btn1');
+    var btn2 = document.getElementById('btn2');
+    var btn3 = document.getElementById('btn3');
+    // 打开浏览器看效果
+    btn1.onclick = function() {
+        alert('Hello World!');
+    }
+    
+    btn2.onclick = function() {
+        var tips = prompt('请输入用户名');
+        console.log(tips);
+    }
+    
+    btn3.onclick = function() {
+        var isOk = confirm('是否删除数据');
+        console.log(isOk);
+    }
+</script>
+```
+
+### onload 和 onunload
+
+```html
+<script>
+	// var box = document.getElementById('box');
+    // console.dir(box);   // 这里获取不到 box，因为页面从上到下执行，box 还没有加载
+    
+    // onload 页面加载完成后执行
+    onload = function() {
+        var box = document.getElementById('box');
+    	console.dir(box);
+    }
+    
+    // onunload 页面卸载的时候执行
+    onunload = function() {
+        // 在 onunload 中，所有的对话框都无法使用
+        // 页面释放的时候，window 对象被冻结，这将会阻止所有的对话框执行
+        // F5 刷新的时候发生了两件事情
+        // 1.卸载页面    2.重新加载页面
+        console.log('bye');
+    }
+</script>
+<body>
+    <div id="box">
+    
+    </div>
+</body>
+<script>
+	// 当页面上的元素创建完毕后就会执行
+</script>
+```
+
+### setTimeout() 
+
+setTimeout() 定时器，在指定的好秒速到达之后执行指定的函数，只执行一次 [点击查看文档](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/setTimeout)
+
+```html
+<input type="button" id="btn1" value="开启定时器">
+<input type="button" id="btn2" value="取消定时器">
+<script>
+	// setTimeout() 隔一段时间执行，并且只会执行一次
+    var btn1 = document.getElementById('btn1');
+    var btn2 = document.getElementById('btn2');
+    // 定时器的标识
+    var timerId;
+    btn1.onclick = function() {
+        // 定时器有两个参数
+        // 1.要执行的函数，第一个参数可以放命名函数，也可以放匿名函数
+        // 2.间隔的时间(单位是毫秒)
+        // 定时器的返回值是一个整数，这个整数是定时器的标识
+        
+        // timerId = setTimeout(function() {
+        //     alert('Boommmmmmmmm');
+        // }, 3000);
+        
+        timerId = setTimeout(fn, 3000);
+        
+        function fn() {
+            alert('BOOMMMMMMMMM！！！！！！');
+        }
+        
+        btn2.onclick = function() {
+            // 取消定时器的执行
+            clearTimeout(timerId);
+        } 
+    }
+</script>
+```
+
+### 案例：删除提示
+
+`clearTimeout()`取消通过 `setTimeout()`设置的定时器 [点击查看文档](https://developer.mozilla.org/zh-CN/docs/Web/API/WindowTimers/clearTimeout)
+
+```html
+<style>
+    #tip {
+        width: 300px;
+        height: 50px;
+        line-height: 50px;
+        background-color: #ff0;
+        color: #f00;
+        opacity: .4;
+        text-align: center;
+        margin: 150px auto;
+        display: none;
+    }
+</style>
+<input type="button" id="btn" value="删除">
+<div id="tip">删除成功</div>
+<script>
+	var btn = document.getElementById('btn');
+    var tip = document.getElementById('tip');
+    btn.onclick = function() {
+        tip.style.display = 'block';
+        setTimeout(function() {
+            tip.style.display = 'none';
+        }, 2000)
+    }
+</script>
+```
+
+### setInterval()
+
+setInterval() 定时器，用法和 setTimeout() 相同，但是在执行的时候，此方法会重复调用一个函数或执行一段代码，在每次调用之间具有固定的时间延迟 [点击查看文档](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/setInterval)
+
+```html
+<input type="button" id="btn1" value="开启定时器">
+<input type="button" id="btn2" value="取消定时器">
+<script>
+    // setInterval() 隔一段时间执行，并且会重复执行
+	var btn1 = document.getElementById('btn1');
+    var btn2 = document.getElementById('btn2');
+    // 定时器的标识
+    var timerId;
+    btn1.onclick = function() {
+        // 第一次执行也要等 3000 毫秒
+        var timerId = setInterval(function() {
+            alert('早上好，该起床啦');
+        }, 3000);
+    }
+    
+    btn2.onclick = function() {
+        clearInterval(timerId);
+    }
+</script>
+```
+
+### 案例：倒计时
+
+`clearInterval()`取消通过 `setInterval()`方法设置的定时器 [点击查看文档](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/clearInterval)
+
+```html
+<script>
+	var day = document.getElementById('day');
+    var hour = document.getElementById('hour');
+    var minute = document.getElementById('minute');
+    var second = document.getElementById('second');
+    // 定义一个变量，用来存储结束的时间
+    var end = new Date('2018-11-11 00:00:00');
+    function getTime(end) {
+        // 定义一个变量，存储当前的时间
+        var start = new Date();
+        // 计算出结束时间和当前时间的差（毫秒）
+        var time = parseInt((+end - +start) / 1000);
+        var day, hour, minute, second;
+        day = parseInt(time / 60 / 60 / 24);
+        second = parseInt(time % 60);
+        hour = parseInt(time / 60 / 60 % 24);
+        minute = parseInt(time / 60 % 60);
+        return {
+            day: day,
+            second: second,
+            hour: hour,
+            minute: minute
+        }
+    }
+    
+    function fn() {
+        var result = getTime(end);
+        day.innerText = result.day;
+        second.innerText = result.second;
+        hour.innerText = result.hour;
+        minute.innerText = result.minute;
+    }
+    // 代码优化：在定时器启动前，先执行一次，解决刚打开页面倒计时为 0 的问题
+    fn();
+    
+    setInterval(fn, 1000)
+</script>
+```
+
+### 案例：简单动画
+
+```html
+<style>
+    #box {
+        width: 200px;
+        height: 200px;
+        background-color: #f00;
+        position: absolute;
+    }
+</style>
+<input type="button" id="btn" value="click">
+<div id="box"></div>
+<script>
+    var btn = document.getElementById('btn');
+    var box = document.getElementById('box');
+	// 1.点击按钮，让盒子向右移动
+    btn.onclick = function() {
+        // 通过 style.left 获取的是标签中的 style 属性设置的样式属性值，如果 style 的属性设置中没有该样式属性，获取到的就是空字符串。
+        // 该方法无法获取通过 css 设置的样式
+        // console.log(box.style.left);
+        
+        // 获取盒子当前位置  offsetLeft  offsetTop (只读)
+        // box.style.left = box.offsetLeft + 10 + 'px';
+        
+        
+        // 2.让盒子不停的向右移动
+        var timerId = setInterval(function() {
+            // 让盒子停在 500px 的位置
+            // 判断盒子当前位置是否到达 500px
+            
+            // 盒子最终停止的位置
+            var target = 500;
+            // 步进
+            var step = 10;
+            if (box.offsetLeft >= target) {
+                // 清除定时器
+                clearInterval(timerId);
+                // 设置横坐标为 500
+                box.style.left = target + 'px';
+                // 跳出循环
+                return;
+            }
+            box.style.left = box.offsetLeft + step + 'px';
+        }, 30)      
+    }
+</script>
+```
+
 
