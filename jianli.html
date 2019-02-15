@@ -1,292 +1,320 @@
-<!DOCTYPE HTML>
-<html>
+<!doctype html>
+<html lang="zh">
 
 <head>
-	<meta charset="utf-8">
-	<title>唐艳飞————个人简历 </title>
-	<link href="./css/bootstrap.min.css" rel="stylesheet">
-	<base target="_blank" />
-	<style>
-		body {
-			background: #ccc;
+	<title>唐艳飞-前端开发</title>
+	<meta charset="UTF-8">
+	<link type="text/css" rel="StyleSheet" href="css/reset.css" />
+	<style type="text/css">
+		.item-title {
+			width: 100px;
+			padding: 4px;
+			line-height: 1.8;
 		}
 
-		#container {
-			max-width: 1200px;
-			margin: 0 auto;
-			background: #fff;
+		.item-content {
+			padding: 4px;
+			line-height: 1.8;
+		}
+
+		li {
+			padding: 7px 0px;
+		}
+
+		.item-wrap {
+			display: -moz-box;
+			display: -webkit-box;
+			display: box;
+			padding: 6px 0px;
+			border-bottom: solid 1px #aaa;
+			margin-bottom: 6px;
+			width: 100%;
+		}
+
+		.item-box-left {
+			width: 100px;
+		}
+
+		.item-box-right {
+			width: 700px;
+		}
+
+		.item-title-hl {
+			font-size: 18px;
+			padding: 4px;
+			background-color: #ddd;
+			border-bottom: solid 2px #ccc;
+		}
+
+		.project-title {
+			font-size: 18px;
+			line-height: 1.8;
+			padding: 4px;
+		}
+
+		.project-sub-title {
+			padding: 4px;
+			line-height: 1.8;
+			width: 70px;
 		}
 	</style>
+	<script type="text/javascript" src="js/jquery1.7.2.min.js"></script>
 </head>
 
-<body>
-	<div id="container" class="container ">
-		<header class="text-center">
-			<h1>唐艳飞——个人简历</h1>
-		</header>
-
-		<article>
-			<div class="panel panel-primary">
-				<div class="panel-heading">
-					<div class="h4">个人信息</div>
-				</div>
-				<div class="panel-body">
-					<table class="table table-bordered table-hover">
-						<thead></thead>
-						<tbody>
-							<tr>
-								<th>姓名：</th>
-								<td>唐艳飞</td>
-								<th>性别：</th>
-								<td>男</td>
-								<!-- <td id="img" rowspan="4"><img src="./image.jpg" ></td> -->
-							</tr>
-							<tr>
-								<th>出生日期：</th>
-								<td>1990年06月19日</td>
-								<th>Github：</th>
-								<td>don1343</td>
-							</tr>
-							<tr>
-								<th>联系方式：</th>
-								<td>18667163225</td>
-								<th>邮箱：</th>
-								<td><a href="mailto:miaoge0527@gmail.com" title="点击发送邮件">miaoge0527@gmail.com</a></td>
-							</tr>
-							<tr>
-								<th>关键词：</th>
-								<td colspan="3">
-									<span class="label label-primary">H5</span>
-									<span class="label label-primary">CSS3</span>
-									<span class="label label-primary">ES5/6/7</span>
-									<span class="label label-primary">jQuery</span>
-									<span class="label label-primary">Bootstrap</span>
-									<span class="label label-primary">Vue</span>
-									<span class="label label-primary">PHP</span>
-									<span class="label label-primary">Python</span>
-									<span class="label label-primary">webpack</span>
-									<span class="label label-primary">微信小程序</span>
-									<span class="label label-info">态度</span>
-									<span class="label label-info">细节</span>
-									<span class="label label-info">负责</span>
-									<span class="label label-info">进取</span>
-									<span class="label label-info">沟通</span>
-								</td>
-							</tr>
-						</tbody>
+<body style="margin:0px auto;width:800px;">
+	<header>
+		<h1 style="color:#e8e8e8; font-size: 30px; font-weight:bold;text-align:center;text-shadow: 2px 2px 2px #333, 0px 0px 5px #666; margin-top:15px;">个人简历</h1>
+		<section style="padding:6px 0px;">
+			<hr />
+		</section>
+	</header>
+	<article style="padding:10px 0px;">
+		<section>
+			<table style="width:100%">
+				<tr>
+					<td class="item-title">姓名：</td>
+					<td class="item-content">唐艳飞</td>
+					<td class="item-title">性别：</td>
+					<td class="item-content">男</td>
+				</tr>
+				<tr>
+					<td class="item-title">出生日期：</td>
+					<td class="item-content">1990.05</td>
+					<td class="item-title">邮箱：</td>
+					<td class="item-content">
+						<a title="给我发邮件" href="mailto:miaoge0527@gmail.com">miaoge0527@gmail.com</a>
+					</td>
+				</tr>
+				<tr>
+					<td class="item-title">求职意向：</td>
+					<td class="item-content">前端开发工程师</td>
+					<td class="item-title">电话号码：</td>
+					<td class="item-content">18667163225</td>
+				</tr>
+			</table>
+		</section>
+		<section style="margin:4px 0px; height:2px; background-color:#888;"></section>
+		<section class="item-wrap">
+			<section class="item-box-left">
+				<span class="item-title-hl">专业技能</span>
+			</section>
+			<section class="item-box-right">
+				<ul>
+					<li>精通 HTML、CSS 等前端技术，熟悉原生 JS</li>
+					<li>熟悉 jQuery、Bootstrap、zepto、MUI 等常用的UI框架和JS库</li>
+					<li>熟悉 移动端开发 以及基于 Vue、React 框架的项目开发</li>
+					<li>理解组件化开发思想，可熟练使用 webpack 进行项目构建</li>
+					<li>熟悉 微信小程序开发</li>
+					<li>熟悉 LESS/SCSS 等 CSS 预编译语言</li>
+					<li>可以熟练使用 Git 进行项目版本管理</li>
+					<li>了解 PHP 和 node.js 后端语言的基本使用</li>
+				</ul>
+			</section>
+		</section>
+		<section class="item-wrap">
+			<section class="item-box-left">
+				<span class="item-title-hl">教育经历</span>
+			</section>
+			<section class="item-box-right" style="margin-bottom:10px;">
+				<table>
+					<tr>
+						<td style="width:150px;">2012.03~2015.01</td>
+						<td style="width:250px;">晋中学院</td>
+						<td>大学专科</td>
+					</tr>
+				</table>
+			</section>
+		</section>
+		<section class="item-wrap">
+			<section class="item-box-left">
+				<span class="item-title-hl">工作经历</span>
+			</section>
+			<section class="item-box-right">
+				<table>
+					<tr>
+						<td style="padding:8px 0px; width:150px;">2016.07~2019.03</td>
+						<td style="padding:8px 0px; width:250px;">山西师桥教育科技有限公司</td>
+						<td>前端开发工程师</td>
+					</tr>
+					<tr>
+						<td style="padding:8px 0px; width:150px;">2015.05~2016.07</td>
+						<td style="padding:8px 0px; width:250px;">高平通途网络技术有限公司</td>
+						<td>前端开发工程师</td>
+					</tr>
+					<tr>
+						<td>2010.03~2015.04</td>
+						<td>富士康（太原）科技工业园区</td>
+						<td>制程管理工程师</td>
+					</tr>
+				</table>
+			</section>
+		</section>
+		<section class="item-wrap">
+			<section class="item-box-left">
+				<span class="item-title-hl">项目经验</span>
+			</section>
+			<section class="item-box-right">
+				<section>
+					<!-- 微信小程序项目 -->
+					<table style="margin-bottom:10px; border-bottom:dashed 1px #ccc;">
+						<tr>
+							<td colspan="2" class="project-title">2018.11 ~ 2019.3 晋城教育培训网（ 微信小程序 ）</td>
+						</tr>
+						<tr>
+							<td class="project-sub-title" valign="top">项目描述:</td>
+							<td class="item-content">使用 mpvue 开发的本地教育培训微信小程序</td>
+						</tr>
+						<tr>
+							<td class="project-sub-title" valign="top">使用技术:</td>
+							<td class="item-content">ES6、SCSS、HTML、Vue、mpvue</td>
+						</tr>
+						<tr>
+							<td class="project-sub-title" valign="top">项目收获:</td>
+							<td class="item-content">
+								基于 mpvue 进行开发，
+								主要负责XXX组件，XXX组件，XXX组件，XXX组件，XXX组件，XXX组件的开发，实现了XXXX功能。
+							</td>
+						</tr>
 					</table>
-				</div>
-			</div>
-
-			<div class="panel panel-primary">
-				<div class="panel-heading">
-					<div class="h4">教育经历</div>
-				</div>
-				<div class="panel-body">
-					<div class="row">
-						<div class="col-md-3">2012-2015</div>
-						<div class="col-md-3">晋中学院</div>
-						<div class="col-md-3">工商企业管理</div>
-						<div class="col-md-3">大学专科 </div>
-					</div>
-				</div>
-			</div>
-
-			<div class="panel panel-primary">
-				<div class="panel-heading">
-					<div class="h4">求职意向</div>
-				</div>
-				<div class="panel-body">
-					<p>
-						<strong>目标职能：</strong>
-						前端工程师
-					</p>
-				</div>
-			</div>
-
-			<div class="panel panel-primary">
-				<div class="panel-heading">
-					<div class="h4">工作经验</div>
-				</div>
-				<div class="panel-body">
-					<table class="table table-bordered table-hover">
-						<thead></thead>
-						<tbody>
-							<tr>
-								<th>2016/07--2018/07</th>
-								<td>山西师桥教育科技有限公司</td>
-							</tr>
-							<tr>
-								<th>所属行业</th>
-								<td>互联网/教育</td>
-							</tr>
-							<tr>
-								<th>职位</th>
-								<td>前端开发工程师</td>
-							</tr>
-						</tbody>
+					<!-- 微信小程序项目 -->
+					<table style="margin-bottom:10px; border-bottom:dashed 1px #ccc;">
+						<tr>
+							<td colspan="2" class="project-title">2017.05 ~ 2017.10 高平便民（ 小程序 ）</td>
+						</tr>
+						<tr>
+							<td class="project-sub-title" valign="top">项目描述:</td>
+							<td class="item-content">
+								配合New UI发布对站点Theme更新，做出一套扁平化Theme，通过对字体大小、框架配色、通用控件外观的调整，使系统的UI美观大方、简洁、易用。
+							</td>
+						</tr>
+						<tr>
+							<td class="project-sub-title" valign="top">使用技术:</td>
+							<td class="item-content">ES6、WXSS、WXML</td>
+						</tr>
+						<tr>
+							<td class="project-sub-title" valign="top">项目收获:</td>
+							<td class="item-content">
+								浏览器兼容性：在功能上要保证所有的浏览器表现一致，在动画效果上可以尝试一些新的特效，保证在新式浏览器上可以展现。
+								<br />
+								回归测试：要准确预估改动对整个系统影响，及早确定测试范围。
+							</td>
+						</tr>
 					</table>
-
-					<h5>工作职责：</h5>
-					<ol>
-						<li>使用HTML+CSS针对需求，完成页面布局。</li>
-						<li>使用（但并不局限于）JS、jQuery等完成网站的交互体验。</li>
-						<li>利用Vue+MUI进行Webapp开发。</li>
-						<li>持续优化用户体验和网站性能。</li>
-						<li>根据客户需求，进行网站客制化开发。</li>
-					</ol>
-				</div>
-
-
-
-				<div class="panel-body">
-					<table class="table table-bordered table-hover">
-						<thead></thead>
-						<tbody>
-							<tr>
-								<th>2010/03--2016/05</th>
-								<td>富士康科技（太原）工业园区</td>
-							</tr>
-							<tr>
-								<th>所属行业</th>
-								<td>高新科技制造业</td>
-							</tr>
-							<tr>
-								<th>职位</th>
-								<td>制程品质工程师--组长</td>
-							</tr>
-						</tbody>
+					<!-- Vue 项目 -->
+					<table style="margin-bottom:10px; border-bottom:dashed 1px #ccc;">
+						<tr>
+							<td colspan="2" class="project-title">2017.02 ~ 2017.05 XXXXXXXXX</td>
+						</tr>
+						<tr>
+							<td class="project-sub-title" valign="top">项目描述:</td>
+							<td class="item-content">
+								My Desktop和Login Page是SchoolStream产品首页及各个应用入口，通过响应式的展现方式方便用户理解与使用。
+							</td>
+						</tr>
+						<tr>
+							<td class="project-sub-title" valign="top">使用技术:</td>
+							<td class="item-content">JavaScript、CSS、Ajax、jQuery、ASP.NET、Web Service</td>
+						</tr>
+						<tr>
+							<td class="project-sub-title" valign="top">项目收获:</td>
+							<td class="item-content">
+								通过对首页HTML结构的重新调整及UI的重新设计，使产品首页在易用性得到极大提高，对JavaScript和CSS代码重写，提高的程序运行效率及浏览器兼容性。对JavaScript最佳实践及面向对象可复用设计有了深入了解，熟悉了CSS定位及布局知识，熟练使用jQuery，对浏览器兼容性问题有了深刻认识。
+							</td>
+						</tr>
 					</table>
-
-					<h5>工作职责：</h5>
-					<ol>
-						<li>负责新产品试产标准文件制作</li>
-						<li>负责工厂布局设计调整</li>
-						<li>负责成本管控与维护、制程设计及改善</li>
-						<li>负责产品首件的工艺确认</li>
-						<li>能独立完成标准工时、SOP制定、新产品报价、工时评估、制程分析、改善生产工艺、提升生产效率等</li>
-					</ol>
-				</div>
-			</div>
-
-			<div class="panel panel-primary">
-				<div class="panel-heading">
-					<div class="h4">个人技能</div>
-				</div>
-				<div class="panel-body">
-					<ol>
-						<li>可以熟练使用HTML+CSS+JS进行网站开发，熟悉前端调试工具；</li>
-						<li>熟悉Git操作；</li>
-						<li>可以熟练使用Vue+webpack进行项目开发；</li>
-						<li>移动端（H5、css3）项目开发；</li>
-						<li>微信小程序开发</li>
-						<li>响应式布局/自适应网站开发；</li>
-						<li>良好的代码编写习惯；</li>
-					</ol>
-				</div>
-			</div>
-
-
-			<div class="panel panel-primary">
-				<div class="panel-heading">
-					<div class="h4">项目经验</div>
-				</div>
-				<div class="panel-body">
-					<ol>
-						<li>
-							<p class="leader">师桥APP官网</p>
-							<table class="table table-bordered table-hover">
-								<colgroup>
-									<col class="col-md-2" />
-									<col class="col-md-10" />
-								</colgroup>
-								<tbody>
-									<tr>
-										<th>项目描述：</th>
-										<td>师桥APP官方网站，使用fullpage实现响应式开发，实现全平台访问无障碍，兼容IE8以上。</td>
-									</tr>
-									<tr>
-										<th>责任描述：</th>
-										<td>项目主要执行者</td>
-									</tr>
-									<tr>
-										<th>页面参考：</th>
-										<td>
-											<table class="table">
-
-												<tbody>
-													<tr>
-
-														<td><a href="http://api.t-qiao.com/" title="师桥APP官网">http://api.t-qiao.com/</a></td>
-
-													</tr>
-
-												</tbody>
-											</table>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</li>
-
-						<li>
-							<p class="leader">高平中专实训基地平台</p>
-							<table class="table table-bordered table-hover">
-								<colgroup>
-									<col class="col-md-2" />
-									<col class="col-md-10" />
-								</colgroup>
-								<tbody>
-									<tr>
-										<th>项目描述：</th>
-										<td>政府招标项目，主要是开发新闻展示，文件上传等</td>
-									</tr>
-									<tr>
-										<th>责任描述：</th>
-										<td>整站布局、轮播图效果、页码、列表项、对接后台数据等。</td>
-									</tr>
-									<tr>
-										<th>页面参考：</th>
-										<td>
-											<table class="table">
-
-												<tbody>
-													<tr>
-														<td>
-															<a href="http://front.platform.ymstudio.xyz/html/" title="高平中专实训基地平台">http://front.platform.ymstudio.xyz/html/</a>
-
-														</td>
-
-													</tr>
-												</tbody>
-											</table>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</li>
-					</ol>
-				</div>
-
-				<div class="panel panel-primary">
-					<div class="panel-heading">
-						<div class="h4">自我评价</div>
-					</div>
-					<div class="panel-body">
-						<ol>
-							<li>敢于挑战具有一定难度的需求；</li>
-							<li>团队意识强，有一定的进取心，跟得上WEB开发的节奏；</li>
-							<li>对新鲜事物接收能力强，有很强的自学能力，乐于学习新知识；</li>
-							<li>积极认真，责任心强，有一定的动手能力</li>
-							<li>态度决定一切，细节决定成败；</li>
-						</ol>
-					</div>
-				</div>
-
-			</div>
-		</article>
-	</div>
-
+					<!-- h5 项目 -->
+					<table style="margin-bottom:10px; border-bottom:dashed 1px #ccc;">
+						<tr>
+							<td colspan="2" class="project-title">2016.07 ~ 2017.01 师桥</td>
+						</tr>
+						<tr>
+							<td class="project-sub-title" valign="top">项目描述:</td>
+							<td class="item-content">SchoolStream产品中通用Web控件开发，包括Dialog、Tree、Tab、List View、Single
+								Button，页面可以直接调用组件进行常见功能开发。</td>
+						</tr>
+						<tr>
+							<td class="project-sub-title" valign="top">使用技术:</td>
+							<td class="item-content">ASP.NET、WebControl、JavaScript、CSS、设计模式</td>
+						</tr>
+						<tr>
+							<td class="project-sub-title" valign="top">项目收获:</td>
+							<td class="item-content">
+								通过对现有自定义控件修改及开发新控件，对软件设计兼容性、拓展性有了深刻认识，理解、熟练使用策略模式、工厂模式、观察者模式、单例模式熟悉JavaScript面向对象开发及CSS定位布局，强化了浏览器兼容性意识。
+							</td>
+						</tr>
+					</table>
+					<!-- bootstrap + jquery 项目 -->
+					<table style="margin-bottom:10px; border-bottom:dashed 1px #ccc;">
+						<tr>
+							<td colspan="2" class="project-title">2015.11 ~ 2016.06 高平中专实训基地（ 后台管理系统 ）</td>
+						</tr>
+						<tr>
+							<td class="project-sub-title" valign="top">项目描述:</td>
+							<td class="item-content">高平中专实训基地平台配套的后台管理系统。主要包括用户管理，文章管理（ 增、删、改、查 ），评论审核，网站设置等功能</td>
+						</tr>
+						<tr>
+							<td class="project-sub-title" valign="top">使用技术:</td>
+							<td class="item-content">JQuery、Bootstrap</td>
+						</tr>
+						<tr>
+							<td class="project-sub-title" valign="top">项目收获:</td>
+							<td class="item-content">
+								了解基于SQL
+								Server的数据库设计基本知识，设计符合3NF的数据库结构，通过正确使用索引提高搜索效率，熟练应用OOP中的开放封闭原则、单一职责原则、里氏代换原则及设计模式进行程序设计，了解基于Unity的IoC及MVP模式。
+							</td>
+						</tr>
+					</table>
+					<!-- 维护：php 项目 -->
+					<table style="margin-bottom:10px;">
+						<tr>
+							<td colspan="2" class="project-title">2015.05 ~ 2015.09 高平老猫网（ 维护 ）</td>
+						</tr>
+						<tr>
+							<td class="project-sub-title" valign="top">项目描述:</td>
+							<td class="item-content">
+								本地生活服务平台，前端页面使用 PHP + art-template 进行开发，后台管理页面使用 PHP + Bootstrap
+								进行开发。前端页面包括轮播图、信息分类、信息列表、信息详情、信息搜索、付费推荐、注册登录等核心功能，后台管理页面包括网站设置（ 轮播图、分类菜单 和其他设置）、用户管理、信息管理等主要功能。
+							</td>
+						</tr>
+						<tr>
+							<td class="project-sub-title" valign="top">使用技术:</td>
+							<td class="item-content">PHP、Bootstrap、jQuery、art-template、awesome </td>
+						</tr>
+						<tr>
+							<td class="project-sub-title" valign="top">项目收获:</td>
+							<td class="item-content">
+								通过对项目的维护，理解了 MVC 开发思想，对前后端协作有了较深的认识。通过使用 ajax 进行数据交互，积累了大量的经验。对于使用 MySQL
+								进行数据存储有了初步的认识。和师父进行技术交流，一起研讨技术实现方案和数据渲染处理，最终决定使用 art-template 模板引擎替换原生的动态数据渲染，使得开发更加快捷便利。
+							</td>
+						</tr>
+					</table>
+				</section>
+			</section>
+		</section>
+		<section class="item-wrap">
+			<section class="item-box-left">
+				<span class="item-title-hl">自我评价</span>
+			</section>
+			<section class="item-box-right" style="margin-bottom:10px;">
+				<ul>
+					<li>性格乐观开朗，感染力强，能够带动团队氛围</li>
+					<li>具有良好的 沟通能力 和 团队协作精神、优秀的 分析问题 和 解决问题 的能力</li>
+					<li>对技术感兴趣，广泛关注行业知识、动向，喜欢钻研技术原理，逻辑性强</li>
+					<li>对前端领域的新知识、新技术具有很强的学习能力</li>
+					<li>表达能力强，热衷于技术分享，在公司曾负责初级技术培训工作</li>
+				</ul>
+			</section>
+		</section>
+		<section class="item-wrap" style="border:0;">
+			<section class="item-box-left">
+				<span class="item-title-hl">兴趣爱好</span>
+			</section>
+			<section class="item-box-right">
+				徒步、骑行、旅游、刷纪录片、看电影、喜欢各种美食
+			</section>
+		</section>
+	</article>
+	<!-- <script color="247,0,119" opacity="1" count="150" src="https://cdn.bootcss.com/canvas-nest.js/2.0.4/canvas-nest.js"></script> -->
 </body>
 
 </html>
