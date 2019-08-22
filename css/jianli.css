@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
+}
+
+span {
+  display: inline-block;
+}
+
+ul li {
+  list-style: none;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 30px;
+  height: 100px;
+  line-height: 100px;
+  border-bottom: 1px solid #9a9a9a;
+  text-align: center;
+}
+
+.infomation {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #9a9a9a;
+}
+
+.infomation .info-options {
+  width: 50%;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 20px;
+}
+
+.info-options .info-key {
+  width: 90px;
+}
+
+.info-options .info-value {
+  padding-left: 15px;
+}
+
+.cell {
+  width: 100%;
+  display: flex;
+  padding: 15px;
+  border-bottom: 1px solid #9a9a9a;
+}
+
+.cell:nth-last-child(1) {
+  border: none;
+  margin-bottom: 50px;
+}
+
+.cell .cell-title {
+  flex: 1;
+  background-color: #f1f1f1;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+
+.cell .cell-info {
+  flex: 8;
+}
+
+.skill-list .skill-item {
+  height: 30px;
+  line-height: 30px;
+  padding-left: 50px;
+}
+
+.education-experience {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.work-experience-item {
+  border-bottom: 1px dashed #aaa;
+  padding: 10px 0 10px 50px;
+}
+
+.work-experience-item:nth-last-child(1) {
+  border: none;
+}
+
+.work-experience-item .work-experience-time {
+  font-size: 20px;
+}
+
+.work-experience-item .work-experience-time,
+.work-experience-item .work-experience-jobs {
+  height: 30px;
+  line-height: 30px;
+}
+
+.work-experience-duties {
+  display: flex;
+}
+
+.work-experience-duties ul {
+  padding-left: 10px;
+}
+
+.work-experience-duties ul li {
+  height: 30px;
+  line-height: 30px;
+}
+
+.project-item span {
+  flex: 1;
+  line-height: 2em;
+}
+
+.project-item p {
+  flex: 10;
+  word-wrap: break-word;
+  line-height: 2em;
+}
